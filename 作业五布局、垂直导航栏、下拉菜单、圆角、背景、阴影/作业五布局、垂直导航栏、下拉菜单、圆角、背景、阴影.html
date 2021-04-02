@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html { 
+  background: url(./shanghai.jpeg) no-repeat center fixed; 
+  background-size: cover;
+}
+body { 
+  color: white; 
+}
+
+h1 {
+   text-shadow: 0 0 3px #FF0000;
+}
+p{
+   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-radius: 25px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+.menu li.active{
+  background-color: #4CAF50;
+  color: white;
+}
+.menu li:hover:not(.active) {
+  background-color: #555;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+li.dropdown {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: inline;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>The Flight</li>
+      <li class="active">The City</li>
+      <li class="dropdown">
+       <a href="javascript:void(0)">
+       <class="dropbtn">The Island</a>
+   		 <div class="dropdown-content">
+     	<a href="#">Link 1</a>
+      	<a href="#">Link 2</a>
+     	 <a href="#">Link 3</a>
+      <li>The Food</li>
+    </ul>
+  </div>
+
+
+
+  <div class="column content">
+    <h1>The City</h1>
+    <p>Shanghai is one of the four direct-administered municipalities of the People's Republic of China. Welcome to Shanghai!
+</p>
+    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+  </div>
+</div>
+
+
+</body>
+</html>
